@@ -65,3 +65,20 @@
 //     }
 // }
 //outer loop has to wait for inner loop to terminate before it can proceed with it's new round of loops
+
+
+//example 7 of nested loops with a array
+
+const gameBoard = [
+    [4, 32, 8, 4 ],
+    [64, 0, 32, 2 ],
+    [8, 32, 16, 4],
+    [2, 8, 4, 2]
+];
+for(let i = 0; i <gameBoard.length; i++){
+    let row = gameBoard[i];
+    console.log(row)
+    for(let j = 0; j < row.length; j++){
+        console.log(row[j])
+    }
+}
