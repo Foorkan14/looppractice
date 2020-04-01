@@ -133,13 +133,55 @@
 
 
 //example 2 with WHILE loop
-const target = Math.floor(Math.random() * 10);
-let guess = Math.floor(Math.random() * 10);
+// const target = Math.floor(Math.random() * 10);
+// let guess = Math.floor(Math.random() * 10);
 
-while(true){
-    if(target === guess) break;
-    console.log(`target: ${target} guess: ${guess}`);
-    guess = Math.floor(Math.random() * 10);
-}
-console.log(`target: ${target} guess: ${guess}`);
-console.log("you win! guess is equal to target");
+// while(true){
+//     if(target === guess) break;
+//     console.log(`target: ${target} guess: ${guess}`);
+//     guess = Math.floor(Math.random() * 10);
+// }
+// console.log(`target: ${target} guess: ${guess}`);
+// console.log("you win! guess is equal to target");
+
+
+
+
+//FOR ... OF LOOP
+
+// a nice and easy way of iterating over arrays (or other iterable objects)
+//iterates over a iterable (things like array strings etc)
+
+//syntax below 
+// //for(variable of iterable){
+//     statement
+// }
+
+
+//example 1 using a regular for loop and then converting it to for..of loop
+
+// let subreddits = ["apple", "banana", "strawberry", "pineapple", "mango"];
+
+// // for(let i=0; i< subreddits.length; i++){
+// //     console.log(subreddits[i]);
+// // }
+
+
+// //now convert this for loop to a for ...of loop
+
+// for(let sub of subreddits){
+//     console.log(sub);
+// }
+
+
+
+//example 2 with string
+// for(let char of 'cockadoodadoo'){
+//     console.log(char.toUpperCase(char));
+// }
+
+
+//comparing FOR loop and FOR..OF loop
+//example 1 from video 74 
+//so outer loop goes through the length of the array, and inner loop goes through the values within each row
+
