@@ -107,10 +107,37 @@
 
 
 //example 1 a guessing game, basically the while loop will run until the target variable and guess variable are the same
+// const target = Math.floor(Math.random() * 10);
+// let guess = Math.floor(Math.random() * 10);
+
+// while (guess !== target){
+//     console.log(`target: ${target} guess: ${guess}`);
+//     guess = Math.floor(Math.random() * 10);
+// }
+// console.log(`target: ${target} guess: ${guess}`);
+// console.log("you win! guess is equal to target");
+
+
+
+// BREAK KEYWORD
+//WE USE INSIDE OF LOOP TO BREAK OUT OF THE LOOP
+//if you use it in a nested loop then it just stops the nested/inner loop not the outer one
+
+//EXAMPLE with for loop
+// for(let i=0; i<10; i++){
+//     console.log(i);
+//     if(i=== 5){
+//         break;
+//     }
+// }
+
+
+//example 2 with WHILE loop
 const target = Math.floor(Math.random() * 10);
 let guess = Math.floor(Math.random() * 10);
 
-while (guess !== target){
+while(true){
+    if(target === guess) break;
     console.log(`target: ${target} guess: ${guess}`);
     guess = Math.floor(Math.random() * 10);
 }
