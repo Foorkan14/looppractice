@@ -69,17 +69,35 @@
 
 //example 7 of nested loops with a array
 
-const gameBoard = [
-    [4, 32, 8, 4 ],
-    [64, 0, 32, 2 ],
-    [8, 32, 16, 4],
-    [2, 8, 4, 2]
-];
+// const gameBoard = [
+//     [4, 32, 8, 4 ],
+//     [64, 0, 32, 2 ],
+//     [8, 32, 16, 4],
+//     [2, 8, 4, 2]
+// ];
 
-let totalScore = 0;
-for(let i = 0; i <gameBoard.length; i++){
-    let row = gameBoard[i];
-    for(let j = 0; j < row.length; j++){
-        totalScore =+ row[j];
-    }
+// let totalScore = 0;
+// for(let i = 0; i <gameBoard.length; i++){
+//     let row = gameBoard[i];
+//     for(let j = 0; j < row.length; j++){
+//         totalScore =+ row[j];
+//     }
+// }
+
+
+
+//WHILE LOOPS
+//while loops continue to run as long as it's test condition is true 
+// 
+//Example 1 converting a for loop to a while loop
+for(let i=0; i<=5; i++){
+    console.log(i);
+}
+
+//now we convert this for loop to a while loop
+
+let j = 0;
+while (j<=5){
+    console.log(j);
+    j++;
 }
