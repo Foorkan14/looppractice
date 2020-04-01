@@ -185,3 +185,13 @@
 //example 1 from video 74 
 //so outer loop goes through the length of the array, and inner loop goes through the values within each row
 
+
+
+//FOR IN LOOPS
+
+//LOOPS OVER THE KEYS IN AN OBJECT 
+//syntax: for(variable in object){
+    //statement
+//}
+//for in iterates over keys of a object
+//whereas for ..of loop loops over arrays/strings anything that it iterable
