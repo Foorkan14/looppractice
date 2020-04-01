@@ -83,21 +83,36 @@
 //         totalScore =+ row[j];
 //     }
 // }
-
-
+// one of the reasons why we would use for loop is if we wanted to generate a set range of numbers 
 
 //WHILE LOOPS
 //while loops continue to run as long as it's test condition is true 
 // 
 //Example 1 converting a for loop to a while loop
-for(let i=0; i<=5; i++){
-    console.log(i);
-}
+// for(let i=0; i<=5; i++){
+//     console.log(i);
+// }
 
 //now we convert this for loop to a while loop
 
-let j = 0;
-while (j<=5){
-    console.log(j);
-    j++;
+// let j = 0;
+// while (j<=5){
+//     console.log(j);
+//     j++;
+// }
+
+//why we use while loops?
+//we use while loops when we do not know how many times we want the loop to run
+//for example in a video game
+
+
+//example 1 a guessing game, basically the while loop will run until the target variable and guess variable are the same
+const target = Math.floor(Math.random() * 10);
+let guess = Math.floor(Math.random() * 10);
+
+while (guess !== target){
+    console.log(`target: ${target} guess: ${guess}`);
+    guess = Math.floor(Math.random() * 10);
 }
+console.log(`target: ${target} guess: ${guess}`);
+console.log("you win! guess is equal to target");
