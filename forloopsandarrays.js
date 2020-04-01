@@ -75,10 +75,11 @@ const gameBoard = [
     [8, 32, 16, 4],
     [2, 8, 4, 2]
 ];
+
+let totalScore = 0;
 for(let i = 0; i <gameBoard.length; i++){
     let row = gameBoard[i];
-    console.log(row)
     for(let j = 0; j < row.length; j++){
-        console.log(row[j])
+        totalScore =+ row[j];
     }
 }
